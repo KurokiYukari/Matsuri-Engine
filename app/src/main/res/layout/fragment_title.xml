@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/titleMain_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/title_main" />
+
+    <cn.edu.cuc.kuroki.matsuri.ui.view.MtrMainButton
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/titleMain_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525"
+        app:mainText="START"
+        app:subText="Atarashii Monogatari ~" />
+
+    <cn.edu.cuc.kuroki.matsuri.ui.view.MtrMainButton
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/start_button"
+        app:layout_constraintTop_toBottomOf="@+id/start_button"
+        app:mainText="CONTINUE"
+        app:subText="Monogatari no Tsutsuki wo..." />
+
+    <cn.edu.cuc.kuroki.matsuri.ui.view.MtrMainButton
+        android:id="@+id/config_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/continue_button"
+        app:layout_constraintTop_toBottomOf="@+id/continue_button"
+        app:mainText="CONFIG"
+        app:subText="-- Enkan no Kotowari --" />
+
+    <cn.edu.cuc.kuroki.matsuri.ui.view.MtrMainButton
+        android:id="@+id/exit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/config_button"
+        app:layout_constraintTop_toBottomOf="@+id/config_button"
+        app:mainText="EXIT"
+        app:subText="Sayounara wo Oshiete。" />
+
+    <ImageView
+        android:id="@+id/gameTitle_imageView"
+        android:layout_width="239dp"
+        android:layout_height="36dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleMain_imageView"
+        app:layout_constraintVertical_bias="0.635"
+        app:srcCompat="@drawable/game_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

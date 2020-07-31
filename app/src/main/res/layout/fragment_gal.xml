@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/galMain_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/galMain_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/spLeft_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="400dp"
+        android:layout_marginRight="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sp0_00_1_0" />
+
+    <ImageView
+        android:id="@+id/spCenter_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sp0_00_1_0" />
+
+    <ImageView
+        android:id="@+id/spRight_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400dp"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sp0_00_1_0" />
+
+    <TextView
+        android:id="@+id/galMain_textView"
+        android:layout_width="0dp"
+        android:layout_height="172dp"
+        android:background="@drawable/text_box"
+        android:lineSpacingMultiplier="1.5"
+        android:text="如此执念于“生”的人类，又为何会把生命当作花瓣，满足于化身花泥的“死”呢？"
+        android:textColor="@color/mtrPrimaryBlack"
+        android:textSize="12sp"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintBottom_toBottomOf="@id/galMain_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/galName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="32dp"
+        android:text="幽幽子"
+        android:textColor="@color/mtrPrimaryBlack"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/galMain_textView" />
+
+    <TextView
+        android:id="@+id/galCfg_button"
+        android:layout_width="87dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="CONFIG"
+        android:textColor="@drawable/gal_btn_background"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/galMain_textView" />
+
+    <TextView
+        android:id="@+id/galSave_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="SAVE"
+        android:textColor="@drawable/gal_btn_background"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/galCfg_button"
+        app:layout_constraintTop_toBottomOf="@+id/galCfg_button" />
+
+    <TextView
+        android:id="@+id/galLoad_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="LOAD"
+        android:textColor="@drawable/gal_btn_background"
+        android:textStyle="bold"
+        app:fontFamily="serif-monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/galCfg_button"
+        app:layout_constraintTop_toBottomOf="@+id/galSave_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

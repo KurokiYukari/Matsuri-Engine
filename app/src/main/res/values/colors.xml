@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mtrPrimaryBlack">#221B1F</color>
+    <color name="mtrDark">#A498A4</color>
+    <color name="mtrDarkRed">#c48dad</color>
+    <color name="mtrGray">#D8CCDA</color>
+    <color name="mtrLight">#F3EBE8</color>
+    <color name="transparent">#00000000</color>
+</resources>
